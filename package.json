@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "babel-jest": "*",
+    "istanbul": "^0.3.22",
+    "jest-cli": "*",
+    "react": "*"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "setupTestFrameworkScriptFile": "<rootDir>/setup-jasmine-env.js",
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ]
+  },
+  "devDependencies": {
+    "jasmine-reporters": "^1.0.0"
+  }
+}
