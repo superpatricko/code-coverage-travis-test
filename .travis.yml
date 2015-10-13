@@ -5,6 +5,11 @@ node_js:
   - "4.0"
   - "iojs"
 
+# Build only on master
+branches:
+  only:
+    - master
+
 install:
   - npm install
 
